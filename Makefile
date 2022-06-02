@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: vfranco- <vfranco-@student.42.fr>          +#+  +:+       +#+         #
+#    By: coder <coder@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/27 15:48:25 by vfranco-          #+#    #+#              #
-#    Updated: 2022/05/23 02:42:17 by vfranco-         ###   ########.fr        #
+#    Updated: 2022/06/03 00:43:32 by coder            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,9 +18,9 @@ OBJS_PATH	=	objs
 OBJS 		=	$(addprefix $(OBJS_PATH)/,$(notdir $(FILES:.c=.o)))
 FLAGS 		= 	-Wall -Wextra -Werror
 LIBRARIES	= 	-lbsd -lmlx -lXext -lX11 -lm
-LIBFT_PATH	= 	.dependencies/libft
+LIBFT_PATH	= 	dependencies/libft
 LIBFT		=	$(LIBFT_PATH)/libft.a
-GNL_PATH	= 	.dependencies/gnl
+GNL_PATH	= 	dependencies/gnl
 GNL 		= 	$(GNL_PATH)/libgnl.a
 NAME 		=	fdf
 RM 			=	rm -f
